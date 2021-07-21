@@ -1,12 +1,38 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>bettaself sala</title>
+    <title>Bettaself sala</title>
+    <link rel="shortcut icon" href="./assets/logo/ico.png" type="image/x-icon">
+    <link rel="stylesheet" href="./assets/css/index.css">
+    <link rel="manifest" href="./manifest.json">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="theme-color" content="#1E1F1F">
+    <link rel="apple-touch-icon" sizes="152x152" href="./assets/icons/152.png">
+    <link rel="apple-touch-startup-image" sizes="1125x2436" href="./assets/icons/1125.png" />
+    <script defer>
+        if ('serviceWorker' in navigator) {
+            window.addEventListener('load', function () {
+                navigator.serviceWorker.register('./sw.js').then(function (registration) {
+                }, function (err) {
+                });
+            });
+        }
+    </script>
 </head>
 <body>
-    
+    <div class="app">
+        <div class="c-card_video">
+            <img src="./assets/logo/logo.png" alt="Bettaself" class="c-card_video__logo">
+            <div class="space"></div>
+            <button class="c-card_video__button">
+                <img class="card_video__ico" src="./assets/ico/video.png" alt="video">
+                <span>Initial Meeting</span> 
+            </button>
+        </div>
+    </div>
 </body>
 </html>

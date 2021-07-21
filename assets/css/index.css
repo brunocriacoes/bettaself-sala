@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;700&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+    outline: none;
+}
+
+:root {
+    --verde: #09A64B;
+    --laranja: #E95C0C;
+    --amarelo: #FFCC03;
+    --azul: #1A9DD9;
+    --branco: #FFFDF0;
+    --preto: #1E1F1F;
+}
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: var(--preto);
+}
+.app {
+    display: flex;
+    width: 100%;
+    min-height: 100vh;
+    align-items: center;
+    justify-content: center;
+}
+.c-card_video {
+    display: block;
+    width: 100%;
+    text-align: center;
+}
+.c-card_video__logo {
+    display: block;
+    margin: 0 auto;
+}
+.c-card_video__button {
+    display: inline-flex;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(#000, #000);
+    background-repeat: no-repeat;
+    background-position: left top;
+    background-size: 0% 100%;
+    color: var(--amarelo);
+    padding: 12px 24px;
+    border-radius: 5px;
+    font-weight: bold;
+    text-transform: capitalize;
+    cursor: pointer;
+    border: 2px solid;
+    border-image: repeating-linear-gradient(  var(--amarelo), var(--laranja) 60px ) 1;
+    transition: background .3s ease-in-out;
+    border-radius: 5px;
+}
+.c-card_video__button:hover {
+    background-size: 100% 100%;
+}
+.c-card_video__button > img {
+    display: block;
+    width: 18px;
+    margin-right: 10px;
+}
+.space {
+    --line: 20px;
+    display: block;
+    height: var(--line);
+}
