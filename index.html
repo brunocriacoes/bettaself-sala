@@ -10,7 +10,7 @@
     <link rel="manifest" href="./manifest.json">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black">
-    <meta name="theme-color" content="#1E1F1F">
+    <meta name="theme-color" content="#000000">
     <link rel="apple-touch-icon" sizes="152x152" href="./assets/icons/152.png">
     <link rel="apple-touch-startup-image" sizes="1125x2436" href="./assets/icons/1125.png" />
     <script src='https://8x8.vc/external_api.js' defer async></script>
@@ -32,11 +32,12 @@
             <div class="space"></div>
             <button class="c-card_video__button js-button-init">
                 <img class="card_video__ico" src="./assets/ico/video.png" alt="video">
-                <span>Initial Meeting</span> 
+                <span>Start Meeting</span> 
             </button>
         </div>
     </div>
-    <div class="c-render-video">
+    <div class="c-render-video js-box-meet">
+        <div class="btn-close"> <span class="js-close-meet">x</span> </div>
         <div id="meet"/>
     </div>
 </body>

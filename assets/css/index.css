@@ -75,13 +75,36 @@ body {
     height: var(--line);
 }
 .c-render-video {
-    display: block;
+    display: none;
     position: absolute;
     top: 0;
     left: 0;
     max-width: 100vw;
+    background-color: var(--preto);
+    background-image: url(../image/loading.gif);
+    background-repeat: no-repeat;
+    background-size: 65px;
+    background-position: center center;
 }
 .c-render-video iframe {
     width: 100vw !important;
-    height: 100vh !important;
+    height: calc(100vh - 15px ) !important;
+}
+.c-render-video.active {
+    display: block;
+}
+.btn-close {
+    display: block;
+    width: 100%;
+    background-color: var(--preto);
+    color: var(--amarelo);
+    font-family: monospace;
+    font-size: 11px;
+    text-align: right;
+    padding: 5px;
+}
+.btn-close span {
+    border: 1px solid var(--amarelo);
+    padding: 0 3px;
+    cursor: pointer;
 }

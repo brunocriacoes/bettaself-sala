@@ -1,8 +1,8 @@
 {
 	"short_name": "bettaself",
 	"name": "bettaself sala",
-	"theme_color": "#1E1F1F",
-	"background_color": "#1E1F1F",
+	"theme_color": "#000000",
+	"background_color": "#000000",
 	"display": "standalone",
 	"orientation": "portrait",
 	"Scope": "/",
