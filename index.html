@@ -13,6 +13,8 @@
     <meta name="theme-color" content="#1E1F1F">
     <link rel="apple-touch-icon" sizes="152x152" href="./assets/icons/152.png">
     <link rel="apple-touch-startup-image" sizes="1125x2436" href="./assets/icons/1125.png" />
+    <script src='https://8x8.vc/external_api.js' defer async></script>
+    <script src="./assets/js/index.js" defer></script>
     <script defer>
         if ('serviceWorker' in navigator) {
             window.addEventListener('load', function () {
@@ -26,13 +28,16 @@
 <body>
     <div class="app">
         <div class="c-card_video">
-            <img src="./assets/logo/logo.png" alt="Bettaself" class="c-card_video__logo">
+            <img src="./assets/logo/logo-box.png" alt="Bettaself" class="c-card_video__logo">
             <div class="space"></div>
-            <button class="c-card_video__button">
+            <button class="c-card_video__button js-button-init">
                 <img class="card_video__ico" src="./assets/ico/video.png" alt="video">
                 <span>Initial Meeting</span> 
             </button>
         </div>
+    </div>
+    <div class="c-render-video">
+        <div id="meet"/>
     </div>
 </body>
 </html>

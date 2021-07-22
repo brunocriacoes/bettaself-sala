@@ -17,7 +17,8 @@
 }
 body {
     font-family: 'Montserrat', sans-serif;
-    background-color: var(--preto);
+    background: linear-gradient(-45deg, #111111, var(--preto)) ;
+    overflow: hidden;
 }
 .app {
     display: flex;
@@ -34,6 +35,8 @@ body {
 .c-card_video__logo {
     display: block;
     margin: 0 auto;
+    height: 150px;
+    pointer-events: none;
 }
 .c-card_video__button {
     display: inline-flex;
@@ -54,17 +57,31 @@ body {
     border-image: repeating-linear-gradient(  var(--amarelo), var(--laranja) 60px ) 1;
     transition: background .3s ease-in-out;
     border-radius: 5px;
+    box-shadow: 0px 3px 5px rgba(0, 0, 0, .3);
 }
 .c-card_video__button:hover {
     background-size: 100% 100%;
+    box-shadow: 0px 1px 2px rgba(0, 0, 0, .3);
 }
 .c-card_video__button > img {
     display: block;
     width: 18px;
     margin-right: 10px;
+    pointer-events: none;
 }
 .space {
     --line: 20px;
     display: block;
     height: var(--line);
+}
+.c-render-video {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    max-width: 100vw;
+}
+.c-render-video iframe {
+    width: 100vw !important;
+    height: 100vh !important;
 }
